@@ -1,0 +1,14 @@
+2026-11-21 12:29:21 | INFO | === INICIO DE SIMULACIÓN SOFTWARE FJ (FASE 4) ===
+2026-11-21 12:29:21 | INFO | OK -> OP-01: Registrar cliente válido (Ana Gómez) | None
+2026-11-21 12:29:21 | ERROR | Fallo controlado en 'OP-02: Registrar cliente inválido (correo mal formado)' | Causa: Correo electrónico inválido: 'carlos_sin_arroba'.
+2026-11-21 12:29:21 | INFO | OK -> OP-03: Registrar segundo cliente válido (Laura Pérez) | None
+2026-11-21 12:29:21 | INFO | OK -> OP-04: Crear servicio ReservaSala válido | None
+2026-11-21 12:29:21 | INFO | OK -> OP-05: Crear servicio AlquilerEquipo válido | None
+2026-11-21 12:29:21 | INFO | OK -> OP-06: Crear servicio AsesoriaEspecializada válido | None
+2026-11-21 12:29:21 | ERROR | Fallo controlado en 'OP-07: Crear servicio inválido (tarifa negativa)' | Causa: La tarifa base debe ser mayor que cero.
+2026-11-21 12:29:21 | INFO | OK -> OP-08: Crear, confirmar y procesar reserva exitosa de sala | Reserva[f6672f8d] | Ana Gómez -> Sala Reuniones Norte | Duración: 3 | Total: $257,040.00 | Estado: PROCESADA
+2026-11-21 12:29:21 | ERROR | Fallo controlado en 'OP-09: Reserva fallida por duración inválida en alquiler de equipo' | Causa: No fue posible calcular la reserva para 'Laura Pérez'.
+2026-11-21 12:29:21 | INFO | OK -> OP-10: Crear y confirmar reserva exitosa de asesoría | Reserva[5504ad7f] | Laura Pérez -> Arquitectura Cloud & POO | Duración: 4 | Total: $480,000.00 | Estado: CONFIRMADA
+2026-11-21 12:29:21 | ERROR | Fallo controlado en 'OP-11: Reserva fallida por servicio no disponible' | Causa: El servicio 'Laptop Workstation' no está disponible actualmente.
+2026-11-21 12:29:21 | ERROR | Fallo controlado en 'OP-12: Operación no permitida (cancelar reserva ya procesada)' | Causa: No se puede cancelar la reserva f6672f8d porque ya fue PROCESADA.
+2026-11-21 12:29:21 | INFO | === RESUMEN FINAL | Clientes: 2 | Servicios: 3 | Reservas: 2 ===
